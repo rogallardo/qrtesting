@@ -1,0 +1,25 @@
+{
+  "name": "aws-lambda-helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.ts -o dist",
+    "lint": "eslint . --ext .ts",
+    "zip": "7z a -tzip deploy.zip ./dist/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.131",
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vercel/ncc": "^0.38.1",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.3"
+  }
+}
